@@ -18,12 +18,12 @@
 			referrerpolicy="no-referrer"
 		/>
 	</head>
-	<body>
+	<body class="w-full">
 		<!-- Header Start -->
 		<header>
 			<!-- Navbar Start -->
 			<nav
-				class="p-5 px-12 bg-white shadow-md md:flex md:items-center md:justify-between"
+				class="p-5 px-12 bg-white shadow-md md:flex md:items-center md:justify-between fixed w-full top-0"
 			>
 				<!-- Logo Start -->
 				<div class="flex justify-between items-center">
@@ -75,7 +75,7 @@
 				<!-- Menu bar Start -->
 				<ul
 					id="menu-list"
-					class="md:flex md:items-center md:justify-evenly mt-6 md:mt-0 space-y-6 md:space-y-0 z-[-1] md:z-auto md:static absolute bg-white w-full md:w-auto left-0 py-2 md:py-0 pl-4 md:pl-0 opacity-0 md:opacity-100 transition-all ease-in duration-500"
+					class="md:flex md:items-center md:justify-evenly mt-6 md:mt-0 space-y-6 md:space-x-6 md:space-y-0 z-[-1] md:z-auto md:static absolute bg-white w-full md:w-auto left-0 py-2 md:py-0 pl-4 md:pl-0 opacity-0 md:opacity-100 transition-all ease-in duration-500"
 				>
 					<li>
 						<a
@@ -119,7 +119,7 @@
 			<!-- Introduction Section Start -->
 			<section
 				id="heighlight"
-				class="container w-fit m-12 py-12 bg-[#FEEAE9] px-20 rounded-3xl"
+				class="container w-fit m-12 mt-32 py-12 bg-[#FEEAE9] px-20 rounded-3xl"
 			>
 				<div class="container flex justify-between items-center w-full">
 					<div id="header-information" class="w-1/2 space-y-3">
@@ -143,7 +143,10 @@
 						<button
 							class="btn buy-btn px-4 py-2 bg-gradient-to-r from-[#FF589B] to-[#FF136F] rounded-lg text-white transform hover:scale-110 duration-500 ease-in-out"
 						>
-							Buy Now <i class="fa-solid fa-arrow-right-long ml-2 animate-bounce"></i>
+							Buy Now
+							<i
+								class="fa-solid fa-arrow-right-long ml-2 animate-bounce"
+							></i>
 						</button>
 					</div>
 					<div id="heighlight__image" class="w-1/3">
@@ -152,8 +155,53 @@
 				</div>
 			</section>
 			<!-- Introduction Section End -->
+
+			<!-- Products Navigation Section Start -->
+			<section class="container my-12 py-12 w-full">
+				<h1 class="font-bold block text-6xl text-center">Categories</h1>
+				<div class="mt-14 flex justify-evenly">
+					<button
+						id="watch-nav"
+						class="flex items-center text-3xl font-bold bg-gradient-to-r from-[#FF9C35] to-[#FFD019] px-5 py-2 rounded-lg"
+					>
+						Watch
+						<img
+							class="h-16 w-16 ml-4"
+							src="./images/categories/watch.png"
+							alt=""
+						/>
+					</button>
+					<button
+						id="bag-nav"
+						class="flex items-center text-3xl font-bold bg-gradient-to-r from-[#FF589B] to-[#FF136F] px-5 py-2 rounded-lg"
+					>
+						Bag
+						<img
+							class="h-16 w-16 ml-4"
+							src="./images/categories/bag.png"
+							alt=""
+						/>
+					</button>
+					<button
+						id="shoes-nav"
+						class="flex items-center text-3xl font-bold bg-gradient-to-r from-[#4289FF] to-[#3F07F8] px-5 py-2 rounded-lg"
+					>
+						Shoes
+						<img
+							class="h-16 w-16 ml-4"
+							src="./images/categories/shoes.png"
+							alt=""
+						/>
+					</button>
+				</div>
+			</section>
+			<!-- Products Navigation Section End -->
 		</header>
 		<!-- Header End -->
+
+		<!-- Main Section Start -->
+		<main></main>
+		<!-- Main Section End -->
 
 		<!-- JS Script -->
 		<script src="./script/menu-toggler.js"></script>
